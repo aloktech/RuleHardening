@@ -1,0 +1,1531 @@
+[{
+        "actuals": {
+            "element_type": {
+                "value": "23 17 11"
+            },
+            "property_name": {
+                "value": "DOOR_FRAME"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckPropertyExist",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckPropertyExist",
+            "resources": {
+                "en": {
+                    "short_description": "Check if a property exists for a specific element type.",
+                    "name": "Check Property Exist",
+                    "long_description": "This rule checks if all elements of a type in the model have a specific property.",
+                    "issues": ["Element does not exist", "Element(s) with property", "Element(s) without property", "input parameters validation failed"]
+                },
+                "fr": {}
+            },
+            "guid": "028983D5-E60C-47C5-B44B-51553A75B5FE",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "14 11 11 11"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                }
+            }
+        },
+        "rule": "CheckObjectTypeExists",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckObjectTypeExists",
+            "resources": {
+                "en": {
+                    "short_description": "Check if element type exists.",
+                    "name": "Check Element Type Exists",
+                    "long_description": "This rule checks if the target element type exists in the model.",
+                    "issues": ["Element found.", "0 element(s) found.", "input parameters validation failed"]
+                },
+                "fr": {}
+            },
+            "guid": "639AC0F8-0925-47FA-8DC5-8BFAB3228EF9",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "level": {
+                "value": 5
+            },
+            "element_type": {
+                "value": "400 1501 1"
+            },
+            "property_name": {
+                "value": "omniclass"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "level": {
+                    "enum-values": [{
+                            "display": {
+                                "en": ">=1"
+                            },
+                            "value": 1
+                        }, {
+                            "display": {
+                                "en": ">=2"
+                            },
+                            "value": 2
+                        }, {
+                            "display": {
+                                "en": ">=3"
+                            },
+                            "value": 3
+                        }, {
+                            "display": {
+                                "en": ">=4"
+                            },
+                            "value": 4
+                        }, {
+                            "display": {
+                                "en": ">=5"
+                            },
+                            "value": 5
+                        }, {
+                            "display": {
+                                "en": ">=6"
+                            },
+                            "value": 6
+                        }, {
+                            "display": {
+                                "en": ">=7"
+                            },
+                            "value": 7
+                        }, {
+                            "display": {
+                                "en": "=8"
+                            },
+                            "value": 8
+                        }],
+                    "item-type": "number",
+                    "display": {
+                        "en": "Classification Level"
+                    },
+                    "type": "enum",
+                    "order": 3
+                },
+                "element_type": {
+                    "display": {
+                        "en": "Element Type"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckOmniclassDepth",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckOmniclassDepth",
+            "resources": {
+                "en": {
+                    "short_description": "Verify the element has the given Omniclass classification level or greater",
+                    "name": "Check Omniclass Depth",
+                    "long_description": "This rule checks if all elements in the model have the Omniclass classification code in correct syntax based on a specific property.",
+                    "issues": ["Element does not exist", "Classification not accurate", "Classification accurate"]
+                }
+            },
+            "guid": "2057999C-FB8A-4B02-876D-CCDC069F1B26",
+            "version": 1
+        }
+    }, {
+        "actuals": {},
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {}
+        },
+        "rule": "CheckDuplicatePropertyName",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckDuplicatePropertyName",
+            "resources": {
+                "en": {
+                    "short_description": "Check that each element does not have duplicate properties.",
+                    "name": "Check for Duplicate Properties",
+                    "long_description": "This rule checks that each element in the model does not have duplicate properties.",
+                    "issues": ["Element(s) without duplicate property value", "Element(s) with duplicate property value: '{0}'"]
+                },
+                "fr": {}
+            },
+            "guid": "87E42CB7-62CB-4750-A4A3-FE3C419CD03B",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 17 11"
+            },
+            "property_value": {
+                "unit": "ft",
+                "value": 2.5
+            },
+            "property_name": {
+                "value": "FURNITURE_WIDTH"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_value": {
+                    "unit": "optional",
+                    "display": {
+                        "en": "Property Value",
+                        "fr": "Propriété Valeur"
+                    },
+                    "type": ["number", "boolean", "string"],
+                    "order": 3
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckPropertyValueEqual",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckPropertyValueEqual",
+            "resources": {
+                "en": {
+                    "short_description": "Check elements for a specified property value.",
+                    "name": "Check Property Value Equals",
+                    "long_description": "This rule checks if all elements of a type in the model have a specified value for a specified property.",
+                    "issues": ["Element does not exist", "Property does not exist", "Property value does not exist", "Element(s) with specified property value", "Element(s) without specified property value", "Unit validation failed", "input parameters validation failed", "Rule was not configured with units, but the property has units", "Property does not have units, but the rule is expecting units", "All property values do not have compatible units", "Rule units and property units are not compatible"]
+                },
+                "fr": {}
+            },
+            "guid": "C5821923-3870-4285-AB59-948A49120042",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 13 33 17 11"
+            },
+            "property_name": {
+                "value": "wall_user_height_param"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "EnsurePropertyMissing",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "EnsurePropertyMissing",
+            "resources": {
+                "en": {
+                    "short_description": "Ensure element property is missing.",
+                    "name": "Ensure Property Missing",
+                    "long_description": "This rule ensures all elements of a type in the model are missing a specific property.",
+                    "issues": ["Element does not exist", "Element(s) without property", "Element(s) with property", "input parameters validation failed"]
+                },
+                "fr": {}
+            },
+            "guid": "50C55CC1-03B7-4E89-8AA2-08A071FD118D",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_count": {
+                "value": {
+                    "from": {
+                        "value": 3
+                    },
+                    "to": {
+                        "value": 12
+                    }
+                }
+            },
+            "element_type": {
+                "value": "23 17 11"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_count": {
+                    "display": {
+                        "en": "Count",
+                        "fr": "Comptage"
+                    },
+                    "from": {
+                        "display": {
+                            "en": "From",
+                            "fr": "De"
+                        },
+                        "type": "number"
+                    },
+                    "to": {
+                        "display": {
+                            "en": "To",
+                            "fr": "à"
+                        },
+                        "type": "number"
+                    },
+                    "type": "range",
+                    "order": 2
+                },
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                }
+            }
+        },
+        "rule": "CheckObjectTypeQuantity",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckObjectTypeQuantity",
+            "resources": {
+                "en": {
+                    "short_description": "Check quantity for a specified element type.",
+                    "name": "Check Element Type Quantity",
+                    "long_description": "This rule checks if an element type exists in the model at a specified quantity, or quantity range.",
+                    "issues": ["Element count in range", "{0} element(s) found", "From should not be more than To"]
+                },
+                "fr": {}
+            },
+            "guid": "E680B3DE-1BC1-4CFD-BA32-06B14292F7D2",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 17 11"
+            },
+            "property_name": {
+                "value": "FURNITURE_WIDTH"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckPropertyValueExist",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckPropertyValueExist",
+            "resources": {
+                "en": {
+                    "short_description": "Check elements have a value for a specified property.",
+                    "name": "Check Property Value Exists",
+                    "long_description": "This rule checks if all elements of a type in the model have values for a specific property.",
+                    "issues": ["Element does not exist", "Element(s) with property value", "Element(s) without property value", "input parameters validation failed"]
+                },
+                "fr": {}
+            },
+            "guid": "AB6786EB-12E9-4D6F-8ABA-2248A5F20042",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 13 33 17 11"
+            },
+            "property_value": {
+                "value": {
+                    "from": {
+                        "unit": "ft",
+                        "value": 4
+                    },
+                    "to": {
+                        "unit": "ft",
+                        "value": 8
+                    }
+                }
+            },
+            "property_name": {
+                "value": "elem_partition_param"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_value": {
+                    "display": {
+                        "en": "Property Value",
+                        "fr": "Propriété Valeur"
+                    },
+                    "from": {
+                        "unit": "optional",
+                        "display": {
+                            "en": "From",
+                            "fr": "De"
+                        },
+                        "type": ["number", "date"]
+                    },
+                    "to": {
+                        "unit": "optional",
+                        "display": {
+                            "en": "To",
+                            "fr": "à"
+                        },
+                        "type": ["number", "date"]
+                    },
+                    "type": "range",
+                    "order": 3
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckPropertyValueIsInRange",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckPropertyValueIsInRange",
+            "resources": {
+                "en": {
+                    "short_description": "Check if element property value is within the specified range.",
+                    "name": "Check Property Value Is In Range",
+                    "long_description": "This rule checks all elements of a type in the model have a property value within the specified range.",
+                    "issues": ["Element does not exist", "Property does not exist", "Property value does not exist", "Element(s) with property value in specified range", "Element(s) without property value in specified range", "Unit validation failed", "From value is more than To value", "input parameters validation failed", "Rule was not configured with units, but the property has units", "Property does not have units, but the rule is expecting units", "All property values do not have compatible units", "Rule units and property units are not compatible", "Configured range has From units but not To units", "Configured range has To units but not From units", "Configured range To and From units are not compatible"]
+                },
+                "fr": {}
+            },
+            "guid": "DE76CBA0-24D0-4FE4-A4DD-7C31B686D6E2",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 17 11"
+            },
+            "property_value": {
+                "value": "Door[\\d].*"
+            },
+            "property_name": {
+                "value": "Description"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_value": {
+                    "display": {
+                        "en": "Property Value",
+                        "fr": "Propriété Valeur"
+                    },
+                    "pattern": "required",
+                    "type": "string",
+                    "order": 3
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckPropertyValueMatchesPattern",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckPropertyValueMatchesPattern",
+            "resources": {
+                "en": {
+                    "short_description": "Check if element property value matches the specified pattern.",
+                    "name": "Check Property Value Matches Pattern",
+                    "long_description": "This rule checks if all elements of a type in the model have a property value that matches the specified pattern.",
+                    "issues": ["Element does not exist", "Property does not exist", "Property Value does not exist", "Element(s) have specified property value pattern", "Element(s) without specified property value pattern", "Invalid Regular Expression passed", "Type Mismatch, expected String data type"]
+                },
+                "fr": {}
+            },
+            "guid": "464EE1F3-3CC8-4053-8979-3E96B09508BB",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 13 33 17 11"
+            },
+            "property_name": {
+                "value": "elem_partition_param"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckUnique",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckUnique",
+            "resources": {
+                "en": {
+                    "short_description": "Check if element property value is unique.",
+                    "name": "Check Property Value is Unique",
+                    "long_description": "This rule checks if all elements of a type in the model have unique values for a specific property.",
+                    "issues": ["Element does not exist", "Property does not exist", "Property value does not exist", "Element(s) with unique property value", "Element(s) that have duplicate value {0}", "input parameters validation failed"]
+                },
+                "fr": {}
+            },
+            "guid": "AECB0648-5369-4A0E-AF09-2023E955536C",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "property_name": {
+                "value": "Height"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 1
+                }
+            }
+        },
+        "rule": "CheckAllObjectsHaveProperty",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckAllObjectsHaveProperty",
+            "resources": {
+                "en": {
+                    "short_description": "Check if all elements have a specific property.",
+                    "name": "Check All Elements Have Property",
+                    "long_description": "This rule checks if all elements in the model have a specific property.",
+                    "issues": ["Element(s) have property", "Element(s) without property"]
+                },
+                "fr": {}
+            },
+            "guid": "9BC6702C-6E50-41F3-AFD2-413CD6F6B272",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 17 11"
+            },
+            "property_value": {
+                "unit": "ft",
+                "value": 2.5
+            },
+            "property_name": {
+                "value": "FURNITURE_WIDTH"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_value": {
+                    "unit": "optional",
+                    "display": {
+                        "en": "Property Value",
+                        "fr": "Propriété Valeur"
+                    },
+                    "type": ["number", "boolean", "string"],
+                    "order": 3
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "EnsurePropertyValueNotEqual",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "EnsurePropertyValueNotEqual",
+            "resources": {
+                "en": {
+                    "short_description": "Ensure element property value is NOT as specified.",
+                    "name": "Ensure Property Value Not Equal",
+                    "long_description": "This rule ensures all elements of a type in the model have property values different from the specified value.",
+                    "issues": ["Element does not exist", "Property does not exist", "Property value does not exist", "Element(s) without specified property value", "Element(s) with specified property value", "Unit validation failed", "input parameters validation failed", "Rule was not configured with units, but the property has units", "Property does not have units, but the rule is expecting units", "All property values do not have compatible units", "Rule units and property units are not compatible"]
+                },
+                "fr": {}
+            },
+            "guid": "08106DC6-381F-42D3-8BD3-215B41DA4125",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "ratio_of_a_to_b": {
+                "value": 3
+            },
+            "element_type_b": {
+                "value": "OST_Doors"
+            },
+            "element_type_a": {
+                "value": "OST_Windows"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "ratio_of_a_to_b": {
+                    "display": {
+                        "en": "Ratio of A to B",
+                        "fr": "Rapport de A à B"
+                    },
+                    "type": "number",
+                    "order": 3
+                },
+                "element_type_b": {
+                    "display": {
+                        "en": "Element Type B",
+                        "fr": "Type d' élément B"
+                    },
+                    "type": "batype",
+                    "order": 2
+                },
+                "element_type_a": {
+                    "display": {
+                        "en": "Element Type A",
+                        "fr": "Type d' élément A"
+                    },
+                    "type": "batype",
+                    "order": 1
+                }
+            }
+        },
+        "rule": "CheckObjectTypeRatio",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckObjectTypeRatio",
+            "resources": {
+                "en": {
+                    "short_description": "Check quantity ratio of 2 element types.",
+                    "name": "Check Element Type Ratio",
+                    "long_description": "This rule checks if the quantity ratio of the 2 element types is as specified.",
+                    "issues": ["Quantity ratio found as expected", "Quantity ratio of {0} found", "Ratio should not be less than or equal to zero"]
+                },
+                "fr": {}
+            },
+            "guid": "FC0D7C24-D39D-47FF-B1CE-6E83B5B1E488",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 51 11 02"
+            },
+            "property_value": {
+                "value": [0]
+            },
+            "property_name": {
+                "value": "door_cost"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_value": {
+                    "item-type": ["number", "date", "string"],
+                    "display": {
+                        "en": "Property Value",
+                        "fr": "valeur de la propriété"
+                    },
+                    "type": "array",
+                    "order": 3
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckPropertyValueMatchesTermsOrValues",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckPropertyValueMatchesTermsOrValues",
+            "resources": {
+                "en": {
+                    "short_description": "Check if element property value equals any of multiple specified values.",
+                    "name": "Check Property Value Equals Any of Multiple Values",
+                    "long_description": "This rule checks if all elements of a type in the model have a property value that equals any of multiple specified values.",
+                    "issues": ["Element does not exist", "Element(s) without specified property values.", "Property of the element(s) has given values"]
+                },
+                "fr": {}
+            },
+            "guid": "A0AAEF99-0E21-442D-BDFC-CB001B614815",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "level": {
+                "value": 3
+            },
+            "element_type": {
+                "value": "400 1501 1"
+            },
+            "property_name": {
+                "value": "omniclass"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "level": {
+                    "enum-values": [{
+                            "display": {
+                                "en": ">=1"
+                            },
+                            "value": 1
+                        }, {
+                            "display": {
+                                "en": ">=2"
+                            },
+                            "value": 2
+                        }, {
+                            "display": {
+                                "en": ">=3"
+                            },
+                            "value": 3
+                        }, {
+                            "display": {
+                                "en": ">=4"
+                            },
+                            "value": 4
+                        }, {
+                            "display": {
+                                "en": "=5"
+                            },
+                            "value": 5
+                        }],
+                    "item-type": "number",
+                    "display": {
+                        "en": "Classification Level"
+                    },
+                    "type": "enum",
+                    "order": 3
+                },
+                "element_type": {
+                    "display": {
+                        "en": "Element Type"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "CheckAssemblyCodeDepth",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckAssemblyCodeDepth",
+            "resources": {
+                "en": {
+                    "short_description": "Verify the element has the given Uniformat classification level or greater",
+                    "name": "Check Assembly Code Depth",
+                    "long_description": "This rule checks if all elements in the model have the Uniformat classification code in correct syntax based on a specific property.",
+                    "issues": ["Element does not exist", "Classification not accurate", "Classification accurate"]
+                }
+            },
+            "guid": "888DF9FE-4ECD-4FFF-A82E-32061228B140",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_type": {
+                "value": "23 17 11"
+            },
+            "property_name": {
+                "value": "FURNITURE_HEIGHT"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 2
+                }
+            }
+        },
+        "rule": "EnsurePropertyValueMissing",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "EnsurePropertyValueMissing",
+            "resources": {
+                "en": {
+                    "short_description": "Ensure element property value is missing.",
+                    "name": "Ensure Property Value Missing",
+                    "long_description": "This rule ensures all elements of a type in the model are missing a value for a specific property.",
+                    "issues": ["Element does not exist", "Element(s) has property value.", "Property value is missing in all the elements"]
+                },
+                "fr": {}
+            },
+            "guid": "14302D9F-5446-4EA4-8662-DD8A2BB724BD",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "property_name": {
+                "value": "door_cost"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 1
+                }
+            }
+        },
+        "rule": "CheckAllObjectsPropertyValueExists",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckAllObjectsPropertyValueExists",
+            "resources": {
+                "en": {
+                    "short_description": "Check all elements have a value for a specified property.",
+                    "name": "Check All Elements Property Value Exists",
+                    "long_description": "This rule checks if all elements in the model have values for a specific property.",
+                    "issues": ["Element(s) not available", "Property missing", "Property value missing", "Property value exists across all objects"]
+                },
+                "fr": {}
+            },
+            "guid": "B4F01F01-F865-4BC9-B5FD-E576A282EB74",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "threshold": {
+                "value": 100
+            },
+            "element_type": {
+                "value": "23 17 11"
+            },
+            "property_name": {
+                "value": "Heat Transfer Coefficient (U)"
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "threshold": {
+                    "display": {
+                        "en": "Threshold Value",
+                        "fr": "valeur de seuil"
+                    },
+                    "type": "number",
+                    "order": 2
+                },
+                "element_type": {
+                    "display": {
+                        "en": "Element Type",
+                        "fr": "Type d' élément"
+                    },
+                    "type": "batype",
+                    "order": 1
+                },
+                "property_name": {
+                    "display": {
+                        "en": "Property Name",
+                        "fr": "nom de la propriété"
+                    },
+                    "type": "string",
+                    "order": 3
+                }
+            }
+        },
+        "rule": "CheckRelatedTargetValueNotBlank",
+        "descriptor": {
+            "vendor": "Invicara",
+            "name": "CheckRelatedTargetValueNotBlank",
+            "resources": {
+                "en": {
+                    "short_description": "Check that the property value exists if the quantity of an element is equal to or more than the threshold value.",
+                    "name": "Check Property Value Exists Against Quantity",
+                    "long_description": "Check if element count is more or equal to threshold and property value is not blank or null.",
+                    "issues": ["Element(s) count is more or equal to threshold setting and property value is not blank or null", "input parameters validation failed", "Data does not match the threshold setting", "Element(s) count is more or equal to threshold setting and Property does not exist", "Element(s) count is more or equal to threshold setting and Property Value does not exist"]
+                },
+                "fr": {}
+            },
+            "guid": "47883E78-51DF-4214-9455-3D1E42A0949F",
+            "version": 1
+        }
+    }, {
+        "actuals": {
+            "element_types_aggregator": {
+                "value": {
+                    "include_list": {
+                        "value": ["400 1501 1"]
+                    },
+                    "exclude_list": {
+                        "value": ["400 1501 1"]
+                    }
+                }
+            },
+            "element_types_aggregated": {
+                "value": {
+                    "include_list": {
+                        "value": ["400 1501 1"]
+                    },
+                    "exclude_list": {
+                        "value": ["400 1501 1"]
+                    }
+                }
+            },
+            "element_count": {
+                "value": {
+                    "from": {
+                        "value": 1
+                    },
+                    "to": {
+                        "value": 22
+                    }
+                }
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_types_aggregator": {
+                    "type": "object",
+                    "display": {
+                        "en": "Element Types"
+                    },
+                    "parameters": {
+                        "include_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "display": {
+                                "en": "Types to Include"
+                            }
+                        },
+                        "exclude_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "optional": true,
+                            "display": {
+                                "en": "Types to Exclude"
+                            }
+                        }
+                    },
+                    "order": 1
+                },
+                "element_types_aggregated": {
+                    "type": "object",
+                    "display": {
+                        "en": "Element Types"
+                    },
+                    "parameters": {
+                        "include_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "display": {
+                                "en": "Types to Include"
+                            }
+                        },
+                        "exclude_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "optional": true,
+                            "display": {
+                                "en": "Types to Exclude"
+                            }
+                        }
+                    },
+                    "order": 2
+                },
+                "element_count": {
+                    "type": "range",
+                    "display": {
+                        "en": "Count",
+                        "fr": "Comptage"
+                    },
+                    "order": 3,
+                    "from": {
+                        "type": "number",
+                        "display": {
+                            "en": "From",
+                            "fr": "De"
+                        }
+                    },
+                    "to": {
+                        "type": "number",
+                        "display": {
+                            "en": "To",
+                            "fr": "à"
+                        }
+                    }
+                }
+            }
+        },
+        "rule": "CheckAggregatedInAggregator",
+        "descriptor": {
+            "name": "CheckAggregatedInAggregator",
+            "resources": {
+                "en": {
+                    "name": "Check Aggregated In Aggregator Rule",
+                    "short_description": "Check Aggregator Element aggregates specified number of Aggregated Elements",
+                    "long_description": "Model's Aggregator aggregates specified number of Aggregated Elements.",
+                    "issues": ["From should not be more than To", "Aggregator not found", "Aggregators aggregate the required number of aggregated elements", "Aggregators do not aggregate the required number of aggregated elements"]
+                },
+                "fr": {
+                }
+            },
+            "version": 1,
+            "vendor": "Invicara",
+            "guid": "58D871C3-4572-47DB-BD6C-99388D8339DA"
+        }
+
+    }, {
+        "actuals": {
+            "element_types_spatial_structure": {
+                "include_list": {
+                    "value": ["1801 201"]
+                }
+            },
+            "element_types_equipment": {
+                "include_list": {
+                    "value": ["1301 201 151 101"]
+                }
+            },
+            "element_count": {
+                "value": {
+                    "from": {
+                        "value": 1
+                    },
+                    "to": {
+                        "value": 22
+                    }
+                }
+            }
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_types_spatial_structure": {
+                    "type": "object",
+                    "display": {
+                        "en": "Element Types"
+                    },
+                    "parameters": {
+                        "include_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "display": {
+                                "en": "Types to Include"
+                            }
+                        },
+                        "exclude_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "optional": true,
+                            "display": {
+                                "en": "Types to Exclude"
+                            }
+                        }
+                    },
+                    "order": 1
+                },
+                "element_types_equipment": {
+                    "type": "object",
+                    "display": {
+                        "en": "Element Types"
+                    },
+                    "parameters": {
+                        "include_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "display": {
+                                "en": "Types to Include"
+                            }
+                        },
+                        "exclude_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "optional": true,
+                            "display": {
+                                "en": "Types to Exclude"
+                            }
+                        }
+                    },
+                    "order": 2
+                },
+                "element_count": {
+                    "type": "range",
+                    "display": {
+                        "en": "Count",
+                        "fr": "Comptage"
+                    },
+                    "order": 3,
+                    "from": {
+                        "type": "number",
+                        "display": {
+                            "en": "From",
+                            "fr": "De"
+                        }
+                    },
+                    "to": {
+                        "type": "number",
+                        "display": {
+                            "en": "To",
+                            "fr": "à"
+                        }
+                    }
+                }
+            }
+        },
+        "descriptor": {
+            "name": "CheckContainedInSpatialStructure",
+            "resources": {
+                "en": {
+                    "name": "Check Contained In Spatial Structure Rule",
+                    "short_description": "Check Spatial Structure has specified number of Equipments",
+                    "long_description": "Model's Spatial Structures have specified number of Equipments.",
+                    "issues": ["From should not be more than To", "Spatial Structure not found", "Spatial Structures have the required number of equipments", "Spatial Structures do not have the required number of equipments"]
+                },
+                "fr": {
+                }
+            },
+            "version": 1,
+            "vendor": "Invicara",
+            "guid": "58D871C3-4572-47DB-BD6C-99388D8339DA"
+        },
+        "rule": "CheckContainedInSpatialStructure"
+    }, {
+        "rule": "CheckMultipleProperties",
+        "descriptor": {
+            "name": "CheckMultipleProperties",
+            "resources": {
+                "en": {
+                    "name": "Check Multiple Properties",
+                    "short_description": "Check that multiple properties for an element match the specified criteria",
+                    "long_description": "This rule checks that multiple properties for an element match the specified criteria",
+                    "issues": ["Element does not exist",
+                        "The expression references missing properties: {0}",
+                        "Element properties do not match",
+                        "Element properties match",
+                        "One or more of the referenced properties are duplicates - unable to run rule"
+                    ]
+                }
+            },
+            "version": 1,
+            "vendor": "Invicara",
+            "guid": "D0DE0079-8403-4D9F-87F3-A3455CDE40BD"
+        },
+        "schema": {
+            "title": "formal-parameters",
+            "type": "object",
+            "parameters": {
+                "element_types": {
+                    "type": "object",
+                    "display": {
+                        "en": "Element Types"
+                    },
+                    "parameters": {
+                        "include_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "display": {
+                                "en": "Types to Include"
+                            }
+                        },
+                        "exclude_list": {
+                            "type": "array",
+                            "item-type": "batype",
+                            "optional": true,
+                            "display": {
+                                "en": "Types to Exclude"
+                            }
+                        }
+                    },
+                    "order": 1
+                },
+                "match": {
+                    "type": "boolean",
+                    "display": {
+                        "en": "Pass if...",
+                        "fr": "Condition de panne de match"
+                    },
+                    "order": 2
+                },
+                "expression": {
+                    "type": "object",
+                    "display": {
+                        "en": "Expression"
+                    },
+                    "parameters": {
+                        "formula": {
+                            "type": "string",
+                            "display": {
+                                "en": "Boolean Expression",
+                                "fr": "Expression Booléenne"
+                            },
+                            "order": 3
+                        },
+                        "conditions": {
+                            "type": "array",
+                            "item-type": ["object"],
+                            "parameters": {
+                                "property_name": {
+                                    "type": "string",
+                                    "display": {
+                                        "en": "Property Name",
+                                        "fr": "Nom de la propriété"
+                                    }
+                                },
+                                "property_value": {
+                                    "type": ["string", "number", "range", "array", "boolean"],
+                                    "item-type": ["number", "date", "string"],
+                                    "from": {
+                                        "type": ["number", "date"],
+                                        "unit": "optional"
+                                    },
+                                    "to": {
+                                        "type": ["number", "date"],
+                                        "unit": "optional"
+                                    },
+                                    "optional": true,
+                                    "display": {
+                                        "en": "Property Value",
+                                        "fr": "Valeur de la propriété"
+                                    }
+                                },
+                                "operator": {
+                                    "type": "enum",
+                                    "item-type": "string",
+                                    "enum-values": [{
+                                            "value": "equals",
+                                            "display": {
+                                                "en": "Equals"
+                                            }
+                                        },
+                                        {
+                                            "value": "notEquals",
+                                            "display": {
+                                                "en": "Does not Equal"
+                                            }
+                                        },
+                                        {
+                                            "value": "exists",
+                                            "display": {
+                                                "en": "Exists"
+                                            }
+                                        },
+                                        {
+                                            "value": "notExists",
+                                            "display": {
+                                                "en": "Does not Exist"
+                                            }
+                                        },
+                                        {
+                                            "value": "valueExists",
+                                            "display": {
+                                                "en": "Value Exists"
+                                            }
+                                        },
+                                        {
+                                            "value": "valueNotExists",
+                                            "display": {
+                                                "en": "Value Does not Exist"
+                                            }
+                                        },
+                                        {
+                                            "value": "notEmpty",
+                                            "display": {
+                                                "en": "Is not empty"
+                                            }
+                                        },
+                                        {
+                                            "value": "greaterThan",
+                                            "display": {
+                                                "en": "Is greater than"
+                                            }
+                                        },
+                                        {
+                                            "value": "lessThan",
+                                            "display": {
+                                                "en": "Is less than"
+                                            }
+                                        },
+                                        {
+                                            "value": "greaterThanOrEqual",
+                                            "display": {
+                                                "en": "Is greater than"
+                                            }
+                                        },
+                                        {
+                                            "value": "lessThanOrEqual",
+                                            "display": {
+                                                "en": "Is less than"
+                                            }
+                                        },
+                                        {
+                                            "value": "range",
+                                            "display": {
+                                                "en": "Is between"
+                                            }
+                                        },
+                                        {
+                                            "value": "pattern",
+                                            "display": {
+                                                "en": "Is in pattern"
+                                            }
+                                        },
+                                        {
+                                            "value": "multiValue",
+                                            "display": {
+                                                "en": "Is in list of values"
+                                            }
+                                        }
+                                    ],
+                                    "display": {
+                                        "en": "Operator",
+                                        "fr": "Opérateur"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "actuals": {
+            "element_types": {
+                "value": {
+                    "include_list": {
+                        "value": ["400 101 601 1 51 11"]
+                    }
+                }
+            },
+            "match": {
+                "value": true
+            },
+            "expression": {
+                "value": "0 AND 1"
+            },
+            "conditions": {
+                "value": [
+                    {
+                        "property_name": {
+                            "value": "color"
+                        },
+                        "operator": {
+                            "value": "equals"
+                        },
+                        "property_value": {
+                            "value": "red"
+                        }
+                    },
+                    {
+                        "property_name": {
+                            "value": "cost"
+                        },
+                        "operator": {
+                            "value": "equals"
+                        },
+                        "property_value": {
+                            "value": 25
+                        }
+                    }
+                ]
+            }
+        }
+    }]

@@ -1,0 +1,21 @@
+{
+  "database_user" : "root",
+  "passport_base_url" : "/xospassport/api/r1",
+  "empiremanage_database_url" : "jdbc:mysql://localhost:3306",
+  "passport_server_url" : "http://localhost:8080",
+  "empiremanage_base_url" : "/empiremanage/api/r1",
+  "passport_database_url" : "jdbc:mysql://localhost:3306",
+  "empiremanage_server_url" : "http://localhost:8080",
+  "database_password" : "invicara",
+  "folder_path" : {
+    "excel" : "C:\\Users\\INVCH018\\Desktop\\TestCase_Isabella_Elec_Dec_07_170728.xlsx",
+    "json" : "C:\\Users\\INVCH018\\Desktop"
+  },
+  "users" : [ {
+    "data" : {
+      "password" : "alok123",
+      "email" : "test1@nowhere.com"
+    },
+    "id" : 4
+  } ]
+}

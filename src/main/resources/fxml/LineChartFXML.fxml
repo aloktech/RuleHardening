@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+
+<VBox  id="VBox" xmlns:fx="http://javafx.com/fxml" fx:controller="com.invicara.tools.rh.ui.controller.LineChartFXMLController">
+    <BorderPane>
+        <left>
+            <HBox fx:id="modelPanel"> 
+                <padding>
+                    <javafx.geometry.Insets bottom="5" left="5" right="5" top="5" />
+                </padding>
+            </HBox>
+        </left>
+        <right>
+            <HBox>
+                <Button fx:id="exportPdf" onAction="#exportAsPdf" prefWidth="15" prefHeight="15" >
+                    <tooltip>
+                        <Tooltip text="Generate Report in PDF format" />
+                    </tooltip>
+                </Button>
+                <Button fx:id="exportExcel" onAction="#exportAsExcel" prefWidth="15" prefHeight="15" >
+                    <tooltip>
+                        <Tooltip text="Generate Report in Excel format" />
+                    </tooltip>
+                </Button>
+                <Button fx:id="exportHtml" onAction="#exportAsHtml" prefWidth="15" prefHeight="15">
+                    <tooltip>
+                        <Tooltip text="Generate Report in HTML format" />
+                    </tooltip>
+                </Button>
+                <Button fx:id="exportImage" onAction="#exportAsImage" prefWidth="15" prefHeight="15">
+                    <tooltip>
+                        <Tooltip text="Generate Report in Image format" />
+                    </tooltip>
+                </Button>
+            </HBox>
+        </right>
+    </BorderPane>
+    <LineChart fx:id="lineChart" title="Time taken by testcase in workflow phase in milliseconds" prefWidth="1800" prefHeight="1000" alternativeColumnFillVisible="true"  >
+        <padding>
+            <javafx.geometry.Insets bottom="5" left="5" right="5" top="5" />
+        </padding>
+        <xAxis>
+            <CategoryAxis fx:id="xAxis" autoRanging="true" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" forceZeroInRange="false" autoRanging="true" />
+        </yAxis>
+    </LineChart>
+</VBox>
+

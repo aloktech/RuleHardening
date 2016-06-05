@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<MenuBar fx:id="menuBar" prefHeight="30.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.invicara.tools.rh.ui.controller.MenuBarFXMLController">
+    <Menu fx:id="file" text="File" >
+        <MenuItem fx:id="open" text="Open" onAction="#open" />  
+        <MenuItem fx:id="save" text="Save" onAction="#save"/>  
+        <MenuItem fx:id="saveAs" text="Save As" onAction="#saveAs"/>  
+        <MenuItem fx:id="quit" text="Quit" onAction="#quit"/>  
+    </Menu>
+    <Menu fx:id="chart" text="Chart" >
+        <MenuItem fx:id="addChart" text="Add Model to Chart" onAction="#addModelToChart"/> 
+        <MenuItem fx:id="addSelectedRulesChart" text="Add Selected Rules to Chart" onAction="#addSelectedRulesToChart"/> 
+        <MenuItem fx:id="showChart" text="Show Chart" onAction="#showChart"/> 
+        <MenuItem fx:id="editChart" text="Edit Chart" onAction="#editModel"/> 
+        <MenuItem fx:id="clearChart" text="Clear All Chart" onAction="#clearAllModel"/> 
+    </Menu>
+    <Menu fx:id="tools" text="Tools" >
+        <MenuItem fx:id="configuration" text="Configuration" onAction="#configuration"/> 
+        <MenuItem fx:id="updateRules" text="Update Rules" onAction="#updateRules"/> 
+    </Menu> 
+    <Menu fx:id="help" text="Help" > 
+        <MenuItem fx:id="about" text="About" onAction="#about"/> 
+    </Menu>
+</MenuBar> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox minHeight="30" spacing="5" xmlns:fx="http://javafx.com/fxml" id="ButtonPanelAnchorPane"  
+      fx:controller="com.invicara.tools.rh.ui.controller.ButtonPanelFXMLController">
+    <padding>
+        <javafx.geometry.Insets bottom="5" right="0" left="0"  top="5" />
+    </padding>
+    <Button prefWidth="80"  fx:id="executeAllRules" onAction="#executeAllAction" text="Execute All" /> 
+    <Button prefWidth="80"  fx:id="executeSelected" onAction="#executeSelectedAction" text="Execute Selected"  /> 
+    <Button prefWidth="80"  fx:id="exportAll" onAction="#exportAllAction" text="All"  /> 
+    <Button prefWidth="80"  fx:id="exportSelected" onAction="#exportSelectedAction" text="Selected"  /> 
+    <Button prefWidth="80"  fx:id="executionStop" onAction="#executionStopAction" text="Stop"  /> 
+    <Button prefWidth="80"  fx:id="reset" onAction="#resetAction" text="Reset"  /> 
+    <Button prefWidth="80"  fx:id="clear" onAction="#clearAction" text="Clear"  /> 
+    <Button prefWidth="80"  fx:id="clearAll" onAction="#clearAllAction" text="Clear All"  /> 
+    <Button prefWidth="80"  fx:id="generateReport" onAction="#generateReportAction" text="Report"  /> 
+</HBox> 

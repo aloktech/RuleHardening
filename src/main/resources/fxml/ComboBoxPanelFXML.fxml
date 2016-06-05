@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="AnchorPane" prefHeight="40" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.invicara.tools.rh.ui.controller.ComboBoxPanelFXMLController" spacing="10" >
+    <Label text="Account Id" prefWidth="90" alignment="CENTER_LEFT" />
+    <ComboBox fx:id="accountCB" onAction="#selectAccount" prefWidth="100" /> 
+    
+    <Label text="Project Id" prefWidth="90" alignment="CENTER_LEFT" />
+    <ComboBox fx:id="projectCB" onAction="#selectProject" prefWidth="100" /> 
+    
+    <Label text="Package Master Id" prefWidth="120" alignment="CENTER_LEFT"  />
+    <ComboBox fx:id="packageMasterCB" onAction="#selectPackageMaster" prefWidth="100" /> 
+</HBox>

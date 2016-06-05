@@ -1,0 +1,85 @@
+
+{
+    "title": "Rule results",
+    "type": "array",
+    "items": {
+        "title": "Issues",
+        "type": "object",
+        "properties": {
+            "version": {
+                "type": "number"
+            },
+            "totalelements": {
+                "type": "number"
+            },
+            "issueelements": {
+                "type": "number"
+            },
+            "elements": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "description": {
+                "type": "integer"
+            },
+            "descrparams": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "propertyfixes": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "property_name": {
+                            "type": "string"
+                        },
+                        "property_value": {
+                            "type": "object",
+                            "properties": {
+                                "value": { 
+                                  "type":["string",  "number", "boolean"]
+                                },
+                                "to": { 
+                                    "type": "object",
+                                    "properties": {
+                                         "value": { 
+                                            "type":["string",  "number", "boolean"]
+                                          },
+                                        "unit": {
+                                            "type": ["string"]
+                                            }
+                                    },
+                                    "required": [ "value"]
+                                },
+                                "from": { 
+                                    "type": "object",
+                                    "properties": {
+                                        "value": { 
+                                              "type":["string",  "number", "boolean"]
+                                            },
+                                        "unit": {
+                                            "type": ["string"]
+                                            }
+                                    },
+                                    "required": [ "value"]
+                                },
+                                "unit": {"type": ["string"]}
+                             }
+                        }
+                    },
+                    "required": [ "property_name"]
+                }
+            },
+            "status": {
+                "type": "integer",
+                "enum": [1, 2, 3]
+            }
+        },
+        "required": [ "version", "totalelements", "issueelements", "elements", "description", "status"]
+    }
+}

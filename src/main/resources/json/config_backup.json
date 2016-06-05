@@ -1,0 +1,21 @@
+{
+    "passport_server_url": "http://localhost:8080",
+    "empiremanage_server_url": "http://localhost:8080",
+    "passport_database_url": "jdbc:mysql://localhost:3306",
+    "empiremanage_database_url": "jdbc:mysql://localhost:3306",
+    "database_user": "root",
+    "database_password": "invicara",
+    "passport_base_url": "/xospassport/api/r1",
+    "empiremanage_base_url": "/empiremanage/api/r1",
+    "folder_path": {
+        "excel": "C:\\Users\\INVCH018\\Desktop",
+        "json": "C:\\Users\\INVCH018\\Desktop"
+    },
+    "users": [{
+            "data": {
+                "password": "alok123",
+                "email": "test@nowhere.com"
+            },
+            "id": 4
+        }]
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.invicara.tools.rh.ui.controller.ConfigurationWindowFXMLController">
+    <padding>
+        <javafx.geometry.Insets left="5" right="5" top="10" />
+    </padding>
+   <children>
+       
+       <VBox spacing="5">
+           <padding>
+               <javafx.geometry.Insets left="5" right="5" top="5" />
+           </padding>
+          <children>
+              <HBox>
+                 <children>
+                     <Label prefWidth="200" text="Server URL" styleClass="-fx-font-weight: bold;"/>
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="Passport : " />
+                     <TextField fx:id="passportURL" prefWidth="200" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="EmpireManage : " />
+                     <TextField fx:id="empireManageURL" prefWidth="200" />
+                 </children>
+              </HBox>
+          </children>
+       </VBox>
+       
+       <VBox spacing="5">
+           <padding>
+               <javafx.geometry.Insets left="5" right="5" top="5" />
+           </padding>
+          <children>
+              <HBox>
+                 <children>
+                     <Label prefWidth="200" text="Database Server URL" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="Passport : " />
+                     <TextField fx:id="passportDBURL" prefWidth="200" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="EmpireManage : " />
+                     <TextField fx:id="empireManageDBURL" prefWidth="200" />
+                 </children>
+              </HBox>
+          </children>
+       </VBox>
+       
+       <VBox spacing="5">
+           <padding>
+               <javafx.geometry.Insets left="5" right="5" top="5" />
+           </padding>
+          <children>
+              <HBox>
+                 <children>
+                     <Label prefWidth="200" text="Database Login Info" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="User : " />
+                     <TextField fx:id="user" prefWidth="200" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="Password : " />
+                     <TextField fx:id="password" prefWidth="200" />
+                 </children>
+              </HBox>
+          </children>
+       </VBox>
+       
+       <VBox spacing="5">
+           <padding>
+               <javafx.geometry.Insets left="5" right="5" top="5" />
+           </padding>
+          <children>
+              <HBox>
+                 <children>
+                     <Label prefWidth="200" text="RESTful Base URL" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="Passport : " />
+                     <TextField fx:id="passportBaseURL" prefWidth="200" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="EmpireManage : " />
+                     <TextField fx:id="empireManageBaseURL" prefWidth="200" />
+                 </children>
+              </HBox>
+          </children>        
+       </VBox>
+           
+       <VBox spacing="5">
+           <padding>
+               <javafx.geometry.Insets left="5" right="5" top="5" />
+           </padding>
+              <children>
+              <HBox>
+                 <children>
+                     <Label prefWidth="200" text="Path of Excel or JSON file to save" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="Folder path : " />
+                     <TextField fx:id="folderPath" prefWidth="200" />
+                 </children>
+              </HBox>
+              </children>        
+       </VBox>
+           
+       <VBox spacing="5">
+           <padding>
+               <javafx.geometry.Insets left="5" right="5" top="5" />
+           </padding>
+              <children>
+              <HBox>
+                 <children>
+                     <Label prefWidth="200" text="User Login Information" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="User Id : " />
+                     <ComboBox fx:id="userId" />
+                 </children>
+              </HBox>
+              <HBox>
+                 <children>
+                     <Label prefWidth="120" text="User Data : " />
+                     <TextArea fx:id="userData" prefHeight="100" prefWidth="200" wrapText="true" />
+                 </children>
+              </HBox>
+              </children>
+       </VBox>
+       
+       <HBox alignment="CENTER_RIGHT" spacing="10">
+           <padding>
+               <javafx.geometry.Insets bottom="20" left="5" right="5" top="10" />
+           </padding>
+          <children>
+              <Button fx:id="okButton" onAction="#onOKAction" prefWidth="80" text="OK" />
+              <Button fx:id="applyButton" onAction="#onApplyAction" prefWidth="80" text="Apply" />
+              <Button fx:id="cancelButton" onAction="#onCancelAction" prefWidth="80" text="Cancel" />
+          </children>
+       </HBox>
+   </children>
+</VBox>

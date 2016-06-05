@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="com.invicara.tools.rh.ui.controller.SceneFXMLController">
+    <children>
+        <VBox spacing="5" >
+            <padding>
+                <javafx.geometry.Insets bottom="5" right="5" left="5"  top="5" />
+            </padding>
+            <fx:include source="/fxml/MenuBarFXML.fxml"/>
+            <fx:include source="/fxml/ButtonPanelFXML.fxml"/>
+            <fx:include source="/fxml/ComboBoxPanelFXML.fxml"/>
+            <HBox spacing="10" prefHeight="30">
+                <HBox>
+                    <Label text="Selected Model "  prefWidth="100" alignment="CENTER_LEFT"/>
+                    <ComboBox fx:id="modelList" prefWidth="200" />
+                </HBox>
+                <HBox>
+                    <Label text="Model Version "  prefWidth="90" alignment="CENTER_LEFT"/>
+                    <Label fx:id="modelVersion" prefWidth="30" alignment="CENTER_LEFT" />
+                </HBox>
+                <HBox>
+                    <Label text="Model Name "  prefWidth="90" alignment="CENTER_LEFT"/>
+                    <Label fx:id="modelName" prefWidth="100" alignment="CENTER_LEFT" />
+                </HBox>
+            </HBox>
+            <fx:include source="/fxml/TreeViewFXML.fxml"/>
+            <TextArea fx:id="console" prefHeight="200" wrapText="true" /> 
+        </VBox>
+    </children>
+</AnchorPane>
